@@ -124,3 +124,12 @@ terminals:
         The model of the device
       required: false
 ...
+
+id: cb6e2ac8-bd56-11e5-83de-5cc5d4ded1ae
+root: HVAC
+terminals:
+    - name: Type
+      description: >
+        The type of HVAC device this entity represents
+      domain: 3d0f2b1e-bd57-11e5-83de-5cc5d4ded1ae
+      required: false

@@ -44,3 +44,16 @@ exhaustive: false
 mapping:
     CO2: carbon dioxide
 ...
+
+id: 3d0f2b1e-bd57-11e5-83de-5cc5d4ded1ae
+values:
+    - RTU
+    - AHU
+    - VAV
+    - Damper
+    - Fan
+exhaustive: false
+mapping:
+    RTU: Rooftop Unit
+    AHU: Air Handler Unit
+    VAV: Variable Air Volume Box
