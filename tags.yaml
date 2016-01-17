@@ -50,6 +50,8 @@ subdomains:
       id: ef6af0c0-b412-11e5-8769-0cc47a0f7eea
     - path: HVAC
       id: cb6e2ac8-bd56-11e5-83de-5cc5d4ded1ae
+    - path: Lighting
+      id: fd1291ca-bd58-11e5-83de-5cc5d4ded1ae
 terminals:
     - name: SourceName
       description: >
@@ -78,7 +80,7 @@ terminals:
         The cardinal direction this stream is concerned with
       domain: cd6aa1d6-b413-11e5-8769-0cc47a0f7eea
       required: false
-      
+
 
 ---
 
@@ -134,4 +136,20 @@ terminals:
       description: >
         The type of HVAC device this entity represents
       domain: 3d0f2b1e-bd57-11e5-83de-5cc5d4ded1ae
+      required: false
+    - name: Zone
+      description: >
+        The name of the HVAC zone
+      required: false
+
+id: fd1291ca-bd58-11e5-83de-5cc5d4ded1ae
+root: Lighting
+terminals:
+    - name: Type
+      description: >
+        The type of Lighting this represents
+      required: false
+    - name: Zone
+      description: >
+        The name of the Lighting zone
       required: false
