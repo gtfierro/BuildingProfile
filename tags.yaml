@@ -48,6 +48,8 @@ subdomains:
       id: ec5b1ef0-b412-11e5-8769-0cc47a0f7eea
     - path: Device
       id: ef6af0c0-b412-11e5-8769-0cc47a0f7eea
+    - path: HVAC
+      id: cb6e2ac8-bd56-11e5-83de-5cc5d4ded1ae
 terminals:
     - name: SourceName
       description: >
