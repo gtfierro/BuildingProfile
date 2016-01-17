@@ -127,7 +127,7 @@ terminals:
       description: >
         The model of the device
       required: false
-...
+---
 
 id: cb6e2ac8-bd56-11e5-83de-5cc5d4ded1ae
 root: HVAC
@@ -141,6 +141,8 @@ terminals:
       description: >
         The name of the HVAC zone
       required: false
+
+---
 
 id: fd1291ca-bd58-11e5-83de-5cc5d4ded1ae
 root: Lighting

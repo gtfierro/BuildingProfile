@@ -43,7 +43,7 @@ values:
 exhaustive: false
 mapping:
     CO2: carbon dioxide
-...
+---
 
 id: 3d0f2b1e-bd57-11e5-83de-5cc5d4ded1ae
 values:
