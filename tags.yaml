@@ -60,6 +60,26 @@ terminals:
 
 ---
 
+id: 15bc3394-b411-11e5-8769-0cc47a0f7eea
+root: Actuator
+terminals:
+    - name: UUID
+      description: >
+        Unique actuator identifier. Used by a timeseries to point to its actuator
+      required: false
+    - name: Model
+      description: >
+        Generic data types expected by the actuator. Required by the actual actuator stream
+      required: false
+      domain: c33890b0-db23-11e5-84f6-0cc47a0f7eea
+    - name: Range
+      description: >
+        The range of scalar values accepted by an actuator
+      required: false
+      domain: 01277b52-db24-11e5-84f6-0cc47a0f7eea
+
+---
+
 id: e7264c48-b412-11e5-8769-0cc47a0f7eea
 root: Location
 terminals:

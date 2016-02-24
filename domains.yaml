@@ -57,3 +57,21 @@ mapping:
     RTU: Rooftop Unit
     AHU: Air Handler Unit
     VAV: Variable Air Volume Box
+
+---
+id: c33890b0-db23-11e5-84f6-0cc47a0f7eea
+values:
+    - Binary
+    - Continuous
+exhaustive: false
+mapping:
+    Binary: accepts 1 or 0
+    Continuous: Accepts numbers within the associated Actuator/Range value
+
+---
+
+id: 01277b52-db24-11e5-84f6-0cc47a0f7eea
+reference: >
+    A range is a JSON-encoded list (e.g. [0, 100]) that is inclusive on both sides,
+    describing the range of valid inputs for an actuator.
+exhaustive: false
