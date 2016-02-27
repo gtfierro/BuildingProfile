@@ -52,6 +52,8 @@ subdomains:
       id: cb6e2ac8-bd56-11e5-83de-5cc5d4ded1ae
     - path: Lighting
       id: fd1291ca-bd58-11e5-83de-5cc5d4ded1ae
+    - path: Schedule
+      id: da62cc07-dd88-11e5-b9c2-6003089ed1d0
 terminals:
     - name: SourceName
       description: >
@@ -175,3 +177,37 @@ terminals:
       description: >
         The name of the Lighting zone
       required: false
+
+---
+
+id: da62cc07-dd88-11e5-b9c2-6003089ed1d0
+root: Schedule
+subdomains:
+    - path: Point
+      id: 5331fa78-dd89-11e5-977b-6003089ed1d0
+terminals:
+    - name: Name
+      description: >
+        The simple name of this schedule. This is intended to be used
+        in subscriptions to schedules.
+      required: true
+    - name: Description
+      description: >
+        A short sentence describing this schedule
+      required: true
+
+---
+
+id: 5331fa78-dd89-11e5-977b-6003089ed1d0
+root: Point
+terminals:
+    - name: Name
+      description: >
+        The name of this schedule point, e.g. "Heating Setpoint". This
+        name is further qualified by the schedule name (/Metadata/Schedule/Name).
+        This value is intended to be used in subscriptions to schedules.
+      required: true
+    - name: Description
+      description: >
+        Describing the scheduled point in more detail, for humans
+      required: true
