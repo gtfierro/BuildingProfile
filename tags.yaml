@@ -189,12 +189,19 @@ terminals:
     - name: Name
       description: >
         The simple name of this schedule. This is intended to be used
-        in subscriptions to schedules.
+        in subscriptions to schedules. This tag is produced by a schedule
+        provider.
       required: true
     - name: Description
       description: >
-        A short sentence describing this schedule
+        A short sentence describing this schedule. This is produced by a
+        schedule provider.
       required: true
+    - name: Subscribed
+      description: >
+        This tag is produced by a schedule subscriber and indicates which schedule
+        they are subscribed to. The further mapping of which points they are subscribed
+        to is indicated by /Metadata/Schedule/Point/Subscribed
 
 ---
 
@@ -205,9 +212,16 @@ terminals:
       description: >
         The name of this schedule point, e.g. "Heating Setpoint". This
         name is further qualified by the schedule name (/Metadata/Schedule/Name).
-        This value is intended to be used in subscriptions to schedules.
+        This value is intended to be used in subscriptions to schedules. This tag
+        is produced by schedule providers.
       required: true
     - name: Description
       description: >
-        Describing the scheduled point in more detail, for humans
+        Describing the scheduled point in more detail, for humans. This tag is produced
+        by schedule providers.
       required: true
+    - name: Subscribed
+      description: >
+        This tag is produced by schedule subscribers and indicates the point name they
+        are subscribed to within the Schedule identified by their /Metadata/Schedule/Subscribed tag.
+      required: false
